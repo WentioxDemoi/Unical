@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4172F8F02BB5CEEE00078515 /* TooboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F8EF2BB5CEEE00078515 /* TooboApp.swift */; };
+		4172F8F22BB5CEEE00078515 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F8F12BB5CEEE00078515 /* ContentView.swift */; };
+		4172F8F42BB5CEEF00078515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4172F8F32BB5CEEF00078515 /* Assets.xcassets */; };
+		4172F8F72BB5CEEF00078515 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4172F8F62BB5CEEF00078515 /* Preview Assets.xcassets */; };
+		4172F9252BB5D4DA00078515 /* LoginFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F9242BB5D4DA00078515 /* LoginFunction.swift */; };
+		4172F9272BB5D4EA00078515 /* RegisterFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F9262BB5D4EA00078515 /* RegisterFunction.swift */; };
+		4172F9292BB5D50200078515 /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F9282BB5D50200078515 /* AuthPage.swift */; };
+		4172F92C2BB5ECAC00078515 /* GoogleAuthFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F92B2BB5ECAC00078515 /* GoogleAuthFunction.swift */; };
+		4172F93C2BB5FF0B00078515 /* GitAuthFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F93B2BB5FF0B00078515 /* GitAuthFunction.swift */; };
+		4172F93D2BB5FF0B00078515 /* GitAuthFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F93B2BB5FF0B00078515 /* GitAuthFunction.swift */; };
+		4172F93E2BB5FF0B00078515 /* GitAuthFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172F93B2BB5FF0B00078515 /* GitAuthFunction.swift */; };
+		4172F9452BB602C800078515 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 4172F9442BB602C800078515 /* OAuth2 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4172F8FD2BB5CEEF00078515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4172F8E42BB5CEEE00078515 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4172F8EB2BB5CEEE00078515;
+			remoteInfo = Toobo;
+		};
+		4172F9072BB5CEEF00078515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4172F8E42BB5CEEE00078515 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4172F8EB2BB5CEEE00078515;
+			remoteInfo = Toobo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4172F8EC2BB5CEEE00078515 /* Toobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4172F8EF2BB5CEEE00078515 /* TooboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooboApp.swift; sourceTree = "<group>"; };
+		4172F8F12BB5CEEE00078515 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4172F8F32BB5CEEF00078515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4172F8F62BB5CEEF00078515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4172F8FC2BB5CEEF00078515 /* TooboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TooboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4172F9062BB5CEEF00078515 /* TooboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TooboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4172F9242BB5D4DA00078515 /* LoginFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFunction.swift; sourceTree = "<group>"; };
+		4172F9262BB5D4EA00078515 /* RegisterFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFunction.swift; sourceTree = "<group>"; };
+		4172F9282BB5D50200078515 /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
+		4172F92B2BB5ECAC00078515 /* GoogleAuthFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthFunction.swift; sourceTree = "<group>"; };
+		4172F93B2BB5FF0B00078515 /* GitAuthFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitAuthFunction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4172F8E92BB5CEEE00078515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4172F9452BB602C800078515 /* OAuth2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172F8F92BB5CEEF00078515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172F9032BB5CEEF00078515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4172F8E32BB5CEEE00078515 = {
+			isa = PBXGroup;
+			children = (
+				4172F8EE2BB5CEEE00078515 /* Toobo */,
+				4172F8FF2BB5CEEF00078515 /* TooboTests */,
+				4172F9092BB5CEEF00078515 /* TooboUITests */,
+				4172F8ED2BB5CEEE00078515 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4172F8ED2BB5CEEE00078515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4172F8EC2BB5CEEE00078515 /* Toobo.app */,
+				4172F8FC2BB5CEEF00078515 /* TooboTests.xctest */,
+				4172F9062BB5CEEF00078515 /* TooboUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4172F8EE2BB5CEEE00078515 /* Toobo */ = {
+			isa = PBXGroup;
+			children = (
+				4172F9212BB5D41E00078515 /* Back */,
+				4172F9202BB5D40E00078515 /* Front */,
+				4172F8EF2BB5CEEE00078515 /* TooboApp.swift */,
+				4172F8F12BB5CEEE00078515 /* ContentView.swift */,
+				4172F8F32BB5CEEF00078515 /* Assets.xcassets */,
+				4172F8F52BB5CEEF00078515 /* Preview Content */,
+			);
+			path = Toobo;
+			sourceTree = "<group>";
+		};
+		4172F8F52BB5CEEF00078515 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4172F8F62BB5CEEF00078515 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4172F8FF2BB5CEEF00078515 /* TooboTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TooboTests;
+			sourceTree = "<group>";
+		};
+		4172F9092BB5CEEF00078515 /* TooboUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TooboUITests;
+			sourceTree = "<group>";
+		};
+		4172F9202BB5D40E00078515 /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				4172F9222BB5D42600078515 /* AuthPage */,
+			);
+			path = Front;
+			sourceTree = "<group>";
+		};
+		4172F9212BB5D41E00078515 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				4172F9232BB5D4B700078515 /* AuthFunc */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		4172F9222BB5D42600078515 /* AuthPage */ = {
+			isa = PBXGroup;
+			children = (
+				4172F9282BB5D50200078515 /* AuthPage.swift */,
+			);
+			path = AuthPage;
+			sourceTree = "<group>";
+		};
+		4172F9232BB5D4B700078515 /* AuthFunc */ = {
+			isa = PBXGroup;
+			children = (
+				4172F9242BB5D4DA00078515 /* LoginFunction.swift */,
+				4172F9262BB5D4EA00078515 /* RegisterFunction.swift */,
+				4172F92B2BB5ECAC00078515 /* GoogleAuthFunction.swift */,
+				4172F93B2BB5FF0B00078515 /* GitAuthFunction.swift */,
+			);
+			path = AuthFunc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4172F8EB2BB5CEEE00078515 /* Toobo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4172F9102BB5CEEF00078515 /* Build configuration list for PBXNativeTarget "Toobo" */;
+			buildPhases = (
+				4172F8E82BB5CEEE00078515 /* Sources */,
+				4172F8E92BB5CEEE00078515 /* Frameworks */,
+				4172F8EA2BB5CEEE00078515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4172F9342BB5EE3700078515 /* PBXTargetDependency */,
+				4172F9322BB5EE3300078515 /* PBXTargetDependency */,
+			);
+			name = Toobo;
+			packageProductDependencies = (
+				4172F9442BB602C800078515 /* OAuth2 */,
+			);
+			productName = Toobo;
+			productReference = 4172F8EC2BB5CEEE00078515 /* Toobo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4172F8FB2BB5CEEF00078515 /* TooboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4172F9132BB5CEEF00078515 /* Build configuration list for PBXNativeTarget "TooboTests" */;
+			buildPhases = (
+				4172F8F82BB5CEEF00078515 /* Sources */,
+				4172F8F92BB5CEEF00078515 /* Frameworks */,
+				4172F8FA2BB5CEEF00078515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4172F8FE2BB5CEEF00078515 /* PBXTargetDependency */,
+			);
+			name = TooboTests;
+			productName = TooboTests;
+			productReference = 4172F8FC2BB5CEEF00078515 /* TooboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4172F9052BB5CEEF00078515 /* TooboUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4172F9162BB5CEEF00078515 /* Build configuration list for PBXNativeTarget "TooboUITests" */;
+			buildPhases = (
+				4172F9022BB5CEEF00078515 /* Sources */,
+				4172F9032BB5CEEF00078515 /* Frameworks */,
+				4172F9042BB5CEEF00078515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4172F9082BB5CEEF00078515 /* PBXTargetDependency */,
+			);
+			name = TooboUITests;
+			productName = TooboUITests;
+			productReference = 4172F9062BB5CEEF00078515 /* TooboUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4172F8E42BB5CEEE00078515 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					4172F8EB2BB5CEEE00078515 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					4172F8FB2BB5CEEF00078515 = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+						TestTargetID = 4172F8EB2BB5CEEE00078515;
+					};
+					4172F9052BB5CEEF00078515 = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+						TestTargetID = 4172F8EB2BB5CEEE00078515;
+					};
+				};
+			};
+			buildConfigurationList = 4172F8E72BB5CEEE00078515 /* Build configuration list for PBXProject "Toobo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4172F8E32BB5CEEE00078515;
+			packageReferences = (
+				4172F9432BB602C700078515 /* XCRemoteSwiftPackageReference "OAuth2" */,
+			);
+			productRefGroup = 4172F8ED2BB5CEEE00078515 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4172F8EB2BB5CEEE00078515 /* Toobo */,
+				4172F8FB2BB5CEEF00078515 /* TooboTests */,
+				4172F9052BB5CEEF00078515 /* TooboUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4172F8EA2BB5CEEE00078515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4172F8F72BB5CEEF00078515 /* Preview Assets.xcassets in Resources */,
+				4172F8F42BB5CEEF00078515 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172F8FA2BB5CEEF00078515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172F9042BB5CEEF00078515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4172F8E82BB5CEEE00078515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4172F9272BB5D4EA00078515 /* RegisterFunction.swift in Sources */,
+				4172F9252BB5D4DA00078515 /* LoginFunction.swift in Sources */,
+				4172F92C2BB5ECAC00078515 /* GoogleAuthFunction.swift in Sources */,
+				4172F8F22BB5CEEE00078515 /* ContentView.swift in Sources */,
+				4172F9292BB5D50200078515 /* AuthPage.swift in Sources */,
+				4172F93C2BB5FF0B00078515 /* GitAuthFunction.swift in Sources */,
+				4172F8F02BB5CEEE00078515 /* TooboApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172F8F82BB5CEEF00078515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4172F93D2BB5FF0B00078515 /* GitAuthFunction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172F9022BB5CEEF00078515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4172F93E2BB5FF0B00078515 /* GitAuthFunction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4172F8FE2BB5CEEF00078515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4172F8EB2BB5CEEE00078515 /* Toobo */;
+			targetProxy = 4172F8FD2BB5CEEF00078515 /* PBXContainerItemProxy */;
+		};
+		4172F9082BB5CEEF00078515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4172F8EB2BB5CEEE00078515 /* Toobo */;
+			targetProxy = 4172F9072BB5CEEF00078515 /* PBXContainerItemProxy */;
+		};
+		4172F9322BB5EE3300078515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4172F9312BB5EE3300078515 /* GoogleSignIn */;
+		};
+		4172F9342BB5EE3700078515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4172F9332BB5EE3700078515 /* GoogleSignInSwift */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4172F90E2BB5CEEF00078515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4172F90F2BB5CEEF00078515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4172F9112BB5CEEF00078515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Toobo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toobo.Toobo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4172F9122BB5CEEF00078515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Toobo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toobo.Toobo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4172F9142BB5CEEF00078515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toobo.TooboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toobo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Toobo";
+			};
+			name = Debug;
+		};
+		4172F9152BB5CEEF00078515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toobo.TooboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toobo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Toobo";
+			};
+			name = Release;
+		};
+		4172F9172BB5CEEF00078515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toobo.TooboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Toobo;
+			};
+			name = Debug;
+		};
+		4172F9182BB5CEEF00078515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Toobo.TooboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Toobo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4172F8E72BB5CEEE00078515 /* Build configuration list for PBXProject "Toobo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172F90E2BB5CEEF00078515 /* Debug */,
+				4172F90F2BB5CEEF00078515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4172F9102BB5CEEF00078515 /* Build configuration list for PBXNativeTarget "Toobo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172F9112BB5CEEF00078515 /* Debug */,
+				4172F9122BB5CEEF00078515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4172F9132BB5CEEF00078515 /* Build configuration list for PBXNativeTarget "TooboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172F9142BB5CEEF00078515 /* Debug */,
+				4172F9152BB5CEEF00078515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4172F9162BB5CEEF00078515 /* Build configuration list for PBXNativeTarget "TooboUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172F9172BB5CEEF00078515 /* Debug */,
+				4172F9182BB5CEEF00078515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4172F92A2BB5EC5C00078515 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		4172F9432BB602C700078515 /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4172F9312BB5EE3300078515 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4172F92A2BB5EC5C00078515 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		4172F9332BB5EE3700078515 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4172F92A2BB5EC5C00078515 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		4172F9442BB602C800078515 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4172F9432BB602C700078515 /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4172F8E42BB5CEEE00078515 /* Project object */;
+}
