@@ -1,11 +1,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var errorMessage: String?
-    @State private var isLogged: Bool = false // Ajoutez cet état
+    @State private var isLogged: Bool = false
 
     var body: some View {
         NavigationView {
@@ -15,7 +14,7 @@ struct LoginView: View {
                     .fontWeight(.bold)
                     .padding(.bottom, 40)
 
-                TextField("email", text: $email)
+                TextField("Email", text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.default)
                     .autocapitalization(.none)
@@ -43,7 +42,7 @@ struct LoginView: View {
                 }
 
                 NavigationLink(
-                    destination: MainPage(username: username).navigationBarHidden(true),
+                    destination: MainPage().navigationBarHidden(true),
                     isActive: $isLogged,
                     label: { EmptyView() }
                 )
@@ -86,7 +85,7 @@ struct LoginView: View {
                 return
             }
 
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200, let data = data else {
                 if let data = data {
                     let errorMessage = String(data: data, encoding: .utf8) ?? "Unknown error"
                     DispatchQueue.main.async {
@@ -96,22 +95,15 @@ struct LoginView: View {
                 return
             }
 
-            if let data = data, let username = String(data: data, encoding: .utf8) {
+            if let token = String(data: data, encoding: .utf8) {
                 DispatchQueue.main.async {
-                    print("User Logged In Successfully: \(username)")
-                    self.username = username // Mettez à jour la valeur du nom d'utilisateur local
+                    print("User Logged In Successfully, Token: \(token)")
+                    UserDefaults.standard.set(token, forKey: "jwt") // Save token
+                    self.errorMessage = nil
+                    self.isLogged = true // Navigate to MainPage
                 }
-            } else {
-                print("Invalid response data")
-            }
-
-            DispatchQueue.main.async {
-                self.errorMessage = nil
-                self.isLogged = true // Changez l'état isLogged à true pour activer la NavigationLink
             }
         }.resume()
-
-
     }
 }
 

@@ -40,6 +40,7 @@
 		413C4F022C0B53470099DD80 /* UserRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistration.swift; sourceTree = "<group>"; };
 		413C4F042C0B54250099DD80 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		413C4F062C0B65E00099DD80 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		413C4F082C0B6D750099DD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		41600F902C0A0BCF00C02EDB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		41600F922C0A0C0400C02EDB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		4172F8EC2BB5CEEE00078515 /* Toobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +101,7 @@
 		4172F8EE2BB5CEEE00078515 /* Toobo */ = {
 			isa = PBXGroup;
 			children = (
+				413C4F082C0B6D750099DD80 /* Info.plist */,
 				4172F9212BB5D41E00078515 /* Back */,
 				4172F9202BB5D40E00078515 /* Front */,
 				4172F8EF2BB5CEEE00078515 /* TooboApp.swift */,
@@ -485,6 +487,8 @@
 				DEVELOPMENT_TEAM = D9J8TPA2B9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Toobo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -515,6 +519,8 @@
 				DEVELOPMENT_TEAM = D9J8TPA2B9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Toobo/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

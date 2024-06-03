@@ -49,7 +49,7 @@ struct RegisterView: View {
                 }
 
                 NavigationLink(
-                    destination: MainPage(username: username).navigationBarHidden(true),
+                    destination: MainPage().navigationBarHidden(true),
                     isActive: $isRegistered,
                     label: { EmptyView() }
                 )
@@ -94,7 +94,7 @@ struct RegisterView: View {
                 return
             }
 
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200, let data = data else {
                 if let data = data {
                     let errorMessage = String(data: data, encoding: .utf8) ?? "Unknown error"
                     DispatchQueue.main.async {
@@ -104,10 +104,13 @@ struct RegisterView: View {
                 return
             }
 
-            DispatchQueue.main.async {
-                print("User registered successfully: \(userRegistrationData)")
-                self.errorMessage = nil
-                self.isRegistered = true // Set the state to navigate to MainPage
+            if let token = String(data: data, encoding: .utf8) {
+                DispatchQueue.main.async {
+                    print("User Registered Successfully, Token: \(token)")
+                    UserDefaults.standard.set(token, forKey: "jwt") // Save token
+                    self.errorMessage = nil
+                    self.isRegistered = true // Navigate to MainPage
+                }
             }
         }.resume()
     }

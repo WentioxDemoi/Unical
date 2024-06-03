@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         
         WelcomePage()
+        //MainPage(username: "Baguette");
             //.onOpenURL { url in
                       //GIDSignIn.sharedInstance.handle(url)
                     //}
