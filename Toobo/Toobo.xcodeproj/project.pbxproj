@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4112409F2C0E0AB100885557 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4112409E2C0E0AB100885557 /* WeatherRequest.swift */; };
 		413C4F032C0B53470099DD80 /* UserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C4F022C0B53470099DD80 /* UserRegistration.swift */; };
 		413C4F052C0B54250099DD80 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C4F042C0B54250099DD80 /* MainPage.swift */; };
 		413C4F072C0B65E00099DD80 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C4F062C0B65E00099DD80 /* UserLogin.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4112409E2C0E0AB100885557 /* WeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
 		413C4F022C0B53470099DD80 /* UserRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistration.swift; sourceTree = "<group>"; };
 		413C4F042C0B54250099DD80 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		413C4F062C0B65E00099DD80 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		4172F9222BB5D42600078515 /* AuthPage */ = {
 			isa = PBXGroup;
 			children = (
+				4112409E2C0E0AB100885557 /* WeatherRequest.swift */,
 				4172F9282BB5D50200078515 /* AuthPage.swift */,
 				413C4F042C0B54250099DD80 /* MainPage.swift */,
 			);
@@ -314,6 +317,7 @@
 				4172F8F22BB5CEEE00078515 /* ContentView.swift in Sources */,
 				413C4F032C0B53470099DD80 /* UserRegistration.swift in Sources */,
 				4172F9292BB5D50200078515 /* AuthPage.swift in Sources */,
+				4112409F2C0E0AB100885557 /* WeatherRequest.swift in Sources */,
 				413C4F052C0B54250099DD80 /* MainPage.swift in Sources */,
 				4172F8F02BB5CEEE00078515 /* TooboApp.swift in Sources */,
 			);
